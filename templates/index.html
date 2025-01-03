@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabric Defect Detection</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Fabric Defect Detection</h1>
+    <div class="camera-feed">
+        <img src="/video_feed" alt="Camera Feed">
+    </div>
+    <div class="controls">
+        <form method="POST" action="/control">
+            <button name="action" value="start">Start</button>
+            <button name="action" value="pause">Pause</button>
+            <button name="action" value="stop">Stop</button>
+        </form>
+        <form method="POST" action="/capture">
+            <button name="defect_type" value="holes">Holes</button>
+            <button name="defect_type" value="foreign_yarn">Foreign Yarn</button>
+            <button name="defect_type" value="surface_contamination">Surface Contamination</button>
+            <button name="defect_type" value="slubs">Slubs</button>
+        </form>
+    </div>
+</body>
+</html>
