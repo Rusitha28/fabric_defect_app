@@ -4,6 +4,11 @@ body {
     background-color: #f4f4f9;
 }
 
+h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
 .camera-feed img {
     width: 70%;
     border: 2px solid #ccc;
@@ -21,6 +26,7 @@ button {
     background-color: #007bff;
     color: white;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
